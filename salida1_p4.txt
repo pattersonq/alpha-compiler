@@ -1,0 +1,20 @@
+uno Inserción con éxito
+dos Inserción con éxito
+-1 uno Fallo de inserción
+-1 dos Fallo de inserción
+uno 1 Búsqueda con éxito
+dos 2 Búsqueda con éxito
+cuatro -1 
+cinco -1
+funcion1 
+uno
+-1 uno
+-1 funcion1
+tres
+uno 10
+funcion1 -10
+tres 3 
+dos 2
+cuatro -1
+cierre
+funcion1 -10
