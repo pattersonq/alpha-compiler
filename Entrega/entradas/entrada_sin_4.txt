@@ -1,0 +1,23 @@
+// Programa de prueba 4
+
+main {
+  int i, j, k;
+  int resultado;
+  array int [3] vect;
+
+  function int addgreatest(int i; int j; int k){
+      int w;
+      int z;
+      if (i >= j){
+          k = k + i;
+      } else {
+          k = k + j;
+      }
+  }
+
+  vect[0] = 2;
+  vect[1] = vect[0];
+  vect[2] = 4;  
+
+  //resultado = add_greatest(vect[0], vect[1], vect[2]);
+}
