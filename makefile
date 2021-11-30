@@ -1,17 +1,23 @@
-CC = gcc
 CFLAGS = -Wall -g 
 
 all : prueba_tabla
 
 clean :
-	rm -f prueba_tabla.o prueba_tabla hash_table.o sym_table.o
+	rm -f *.o
+	rm test_files/test.txt
+	rm prueba_tabla
 
-prueba_tabla : prueba_tabla.c sym_table.o
-	$(CC) $(CFLAGS) -o $@ $@.c sym_table.o
-	./prueba_tabla
+prueba_tabla : prueba_tabla.c sym_table.c hash_table.c
+	$(CC) $(CFLAGS) -o $@ $@.c sym_table.c hash_table.c
 
-sym_table.o : hash_table.o sym_table.c
-	$(CC) $(CFLAGS) -c sym_table.c hash_table.o
+test: prueba_tabla
+	./prueba_tabla test_files/entrada1_p4.txt test_files/test.txt
+	diff -b -B test_files/test.txt test_files/salida1_p4.txt
+	./prueba_tabla test_files/entrada2_p4.txt test_files/test.txt
+	diff -b -B test_files/test.txt test_files/salida2_p4.txt
 
-hash_table.o : hash_table.c
-	$(CC) $(CFLAGS) -c $<
+valgrind_test: prueba_tabla
+	valgrind --leak-check=full ./prueba_tabla test_files/entrada1_p4.txt test_files/test.txt
+	diff -b -B test_files/test.txt test_files/salida1_p4.txt
+	valgrind --leak-check=full ./prueba_tabla test_files/entrada2_p4.txt test_files/test.txt
+	diff -b -B test_files/test.txt test_files/salida2_p4.txt

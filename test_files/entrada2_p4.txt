@@ -1,0 +1,34 @@
+uno 1
+dos 2
+tres 3
+uno
+tres
+tres 4
+cuatro 4
+funcion1 -2
+uno
+dos 3
+tres
+cinco 5
+funcion1
+funcion1 8
+funcion2 -3
+cinco
+cierre -999
+funcion1
+tres
+cinco
+funcion2 -3
+funcion2
+funcion1
+cinco
+tres
+seis 6
+seis
+cuatro 5
+cierre -999
+funcion1
+funcion2
+seis
+cinco
+tres

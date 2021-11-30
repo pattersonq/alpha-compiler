@@ -1,0 +1,34 @@
+uno
+dos
+tres
+uno 1
+tres 3
+-1 tres
+cuatro
+funcion1
+uno 1
+dos
+tres 3
+cinco
+funcion1 -2
+-1 funcion1
+Error apertura, ya hay un ambito local abierto!
+cinco 5
+cierre
+funcion1 -2
+tres 3
+cinco -1
+funcion2
+funcion2 -3
+funcion1 -2
+cinco -1
+tres 3
+seis
+seis 6
+cuatro
+cierre
+funcion1 -2
+funcion2 -3
+seis -1
+cinco -1
+tres 3

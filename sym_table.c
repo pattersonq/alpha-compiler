@@ -99,5 +99,6 @@ int close_ambit(stable* table) {
 
     // Liberar la tabla local
     htable_free(table->local_table);
+    table->local_table = NULL;
     return ERROR + 1;
 }
